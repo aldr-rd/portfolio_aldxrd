@@ -5,7 +5,7 @@ import Skills from "./Skills.jsx";
 
 function Content () {
     return (
-        <section className="content_section">
+        <section className="flex flex-col gap-12.5 px-[12%] py-12.5 bg-section">
             <Projects />
             <AboutMe />
             <Certifications />

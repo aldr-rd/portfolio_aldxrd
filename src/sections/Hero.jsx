@@ -1,24 +1,42 @@
-import perfilIcon from '../assets/img/perfil.jpg';
+import perfilIcon from '../assets/img/perfil-web.webp';
 
 function Hero() {
   return (
-    <section className="menu">
-        <header className="menu_header">
-            <img src={perfilIcon} className="menu_img" id="logo" alt="logo"/>
-            <div className="menu_title_container">
-                <p className="menu_title">Aldxrd</p>
-                <p className="menu_subtitle">Web Developer</p>
+    <section className="flex bg-section px-[12%] py-4 justify-between items-center">
+        <header className="flex justify-center items-center gap-2.5">
+            <img src={perfilIcon} className="w-10 h-10 rounded-full" alt="logo"/>
+            <div className="flex flex-col text-normal">
+                <p>Aldxrd</p>
+                <p className="text-secondary text-[12px]">Web Developer</p>
             </div>
         </header>
         <nav>
-            <ul className="menu_list">
-                <li className="menu_list_item"><a href="">Inicio</a></li>
-                <li className="menu_list_item"><a href="">Proyectos</a></li>
-                <li className="menu_list_item"><a href="">Sobre mi</a></li>
-                <li className="menu_list_item"><a href="">Certificaciones</a></li>
-                <li className="menu_list_item"><a href="">Skills</a></li>
-                <li className="menu_list_item menu_list_item-contacto"><a
-                        href="mailto:rd544596@gmail.com">rd544596@gmail.com</a></li>
+            <ul className="flex items-center text-normal text-secondary">
+                <li><a href="#home" className='
+                    px-3 py-2 border-b border-section
+                    hover:text-primary hover:border-primary transition-all duration-500
+                    '>Inicio</a></li>
+                <li><a href="#projects" className='
+                    px-3 py-2 border-b border-section
+                    hover:text-primary hover:border-primary transition-all duration-500
+                    '>Proyectos</a></li>
+                <li><a href="#aboutme" className='
+                    px-3 py-2 border-b border-section
+                    hover:text-primary hover:border-primary transition-all duration-500
+                    '>Sobre mi</a></li>
+                <li><a href="#certifications" className='
+                    px-3 py-2 border-b border-section
+                    hover:text-primary hover:border-primary transition-all duration-500
+                    '>Certificaciones</a></li>
+                <li ><a href="#skills" className='
+                    px-3 py-2 border-b border-section
+                    hover:text-primary hover:border-primary transition-all duration-500
+                    '>Skills</a></li>
+                <li><a href="mailto:rd544596@gmail.com" className='
+                    text-primary font-semibold
+                    px-3 py-2 border-b border-section
+                    hover:text-secondary hover:border-primary transition-all duration-500
+                    '>rd544596@gmail.com</a></li>
             </ul>
         </nav>
     </section>

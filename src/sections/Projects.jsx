@@ -14,18 +14,24 @@ function Projects() {
         );
 
     return (
-        <section className="projects">
-            <div className="projects_container">
-                <h2 className="project_title">PROYECTOS</h2>
+        <section id="projects" className="flex flex-col">
+            <div className="flex flex-col items-start gap-2.5">
+                <h2 className="text-accent text-txth2 font-bold">PROYECTOS</h2>
 
-                <div className="project_divider">
-                    <h3 className="project_subtitle">Mis Proyectos Destacados</h3>
+                <div className="flex flex-col gap-1.25 justify-center items-start">
+                    <h3 className="text-txth3 font-semibold">Mis Proyectos Destacados</h3>
                     {/* Filter Buttons */}
-                    <div className="projects_filters">
+                    <div className="flex p-0.5 rounded-[10px] bg-card">
                         {filters.map((filter) => (
                             <button
                                 key={filter}
-                                className={`projects_filter_button ${activeFilter === filter ? "active" : ""}`}
+                                className={`
+                                    flex px-4 py-2 rounded-[10px] text-normal
+                                    transition-colors duration-400
+                                    cursor-pointer
+                                    hover:bg-card2
+                                    ${activeFilter === filter
+                                        ? "bg-card2" : ""}`}
                                 onClick={() => setActiveFilter(filter)}
                             >
                                 {filter}
@@ -36,7 +42,7 @@ function Projects() {
             </div>
 
             {/* Proyectos */}
-            <div className="project_cards">
+            <div>
                 {filteredProjects.map((project, index) => (
                     <ProjectCard 
                         key={project.id}

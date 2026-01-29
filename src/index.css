@@ -1,8 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@import 'tailwind-animations';
 
 body {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: var(--color-main);
+  line-height: normal;
+  color: var(--color-primary);
+}
+
+@theme {
+  --color-main: #242424;
+  --color-section: #161618;
+  --color-card: #1E1E20;
+  --color-card2: #36383A;
+  --color-card3: #1B1E1D;
+  --color-primary: #FFFFFF;
+  --color-secondary: #A1A1A1;
+  --color-accent: #FF5255;
+  --color-button: #E94343;
+  --color-button2: #27272A;
+  --color-bordes: #36383A;
+
+  --text-normal: 14px;
+  --text-gigante: 64px;
+  --text-mediano: 32px;
+  --text-txth2: 16px;
+  --text-txth3: 32px;
+  --text-txth4: 14px;
+  --text-txth5: 20px;
+  --text-btn: 14px;
 }
