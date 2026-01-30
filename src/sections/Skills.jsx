@@ -6,7 +6,7 @@ function Skills() {
         <section id="skills" className="
             flex flex-col gap-5
         ">
-            <h2 className="text-accent text-txth2 font-bold">SKILLS</h2>
+            <h2 className="text-accent text-txth2 font-bold card-animation">SKILLS</h2>
             <div className="grid grid-cols-4 gap-5">
                 {skills.map((skl) => (
                     <SkillsCard

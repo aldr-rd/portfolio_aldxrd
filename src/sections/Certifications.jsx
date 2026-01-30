@@ -5,9 +5,9 @@ function Certifications() {
     return (
         <section id="certifications" className="
             flex flex-col gap-5 pb-12.5
-            border-b border-bordes 
+            border-b border-bordes
         ">
-            <h2 className="text-accent text-txth2 font-bold">CERTIFICACIONES</h2>
+            <h2 className="text-accent text-txth2 font-bold card-animation">CERTIFICACIONES</h2>
             <div className="grid grid-cols-2 gap-5">
                 {certifications.map((cert) => (
                     <CertificationCard 

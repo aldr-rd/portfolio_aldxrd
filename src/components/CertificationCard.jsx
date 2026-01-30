@@ -6,12 +6,13 @@ export default function CertificationCard({ certification }) {
                 bg-card border border-bordes rounded-[20px]
                 hover:scale-102 transition-all duration-400 group
                 hover:border-primary
-            ">
+                card-animation
+        ">
             <p className="text-txth5 font-semibold">{certification.title}</p>
             <p className="
                 flex gap-1.25
                 text-normal text-secondary
-                ">
+            ">
                 {certification.description}
             </p>
             <a href={certification.url} target="_blank" className="

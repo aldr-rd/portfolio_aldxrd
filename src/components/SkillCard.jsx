@@ -9,6 +9,7 @@ export default function SkillCard({ skill }) {
             hover:border-primary hover:scale-102
             transition-all duration-400
             cursor-default
+            card-animation
         ">
             <p className="
                 text-[18px] font-semibold text-center

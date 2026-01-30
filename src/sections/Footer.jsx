@@ -11,6 +11,7 @@ function Footer() {
                 flex justify-center items-center gap-7.5
                 text-secondary
                 text-normal
+                card-animation
             ">
                 <p>Developed by aldxrd</p>
                 <p>|</p>

@@ -1,12 +1,14 @@
 function AboutMe() {
     return (
-        <section id="aboutme" className="flex flex-col border-b border-bordes gap-2.5 pb-12.5">
+        <section id="aboutme" className="
+            flex flex-col border-b border-bordes gap-2.5 pb-12.5
+        ">
             <div className="flex flex-col gap-2.5">
-                <h2 className="text-txth2 text-accent font-bold">SOBRE MI</h2>
-                <h3 className="text-txth3 font-semibold">Richard Aldair Diaz Brandan</h3>
+                <h2 className="text-txth2 text-accent font-bold card-animation">SOBRE MI</h2>
+                <h3 className="text-txth3 font-semibold card-animation">Richard Aldair Diaz Brandan</h3>
             </div>
             <div className="flex gap-7.5 items-start">
-                <div className="w-1/2">
+                <div className="w-1/2 card-animation">
                     <p>Estudiante de Ingeniería de Sistemas con experiencia en desarrollo web, gestión de proyectos y análisis de información.
                     <br /> <br />
                     He participado en proyectos reales aplicando programación, construcción de sitios web, modelado de datos y coordinación de equipos bajo metodologías ágiles. Manejo tecnologías como JavaScript, React, WordPress, SQL y Power BI, lo que me permite adaptarme a distintos roles dentro del área tecnológica.
@@ -18,6 +20,7 @@ function AboutMe() {
                     border border-bordes rounded-[20px]
                     bg-card w-1/2 p-6.25 cursor-default
                     hover:scale-102 transition-all duration-500
+                    card-animation
                 ">
                     <div className="flex justify-between items-end">
                         <div className="flex flex-col">

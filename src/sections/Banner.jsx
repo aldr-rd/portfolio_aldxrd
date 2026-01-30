@@ -1,6 +1,10 @@
 function Banner() {
     return (
-        <section id="#home" className="px-[12%] py-14 flex justify-center items-center">
+        <section id="home" className="
+            px-[12%] py-14 flex justify-center items-center
+            animate-fade-up
+            animate-range-[entry_0%_cover_30%]
+        ">
             <div>
                 <div className="flex flex-col justify-center items-center gap-5">
                     <div className="flex flex-col justify-center items-center">

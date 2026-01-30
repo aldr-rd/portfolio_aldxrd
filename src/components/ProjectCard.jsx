@@ -5,9 +5,9 @@ export default function ProjectCard({ project, index }) {
   return (
     <div className={`
       flex py-12.5 gap-7.5 w-full border-b border-bordes
-      ${isReversed ? "flex-row-reverse" : "flex-row"}`}>
-
-      <div className="flex flex-col gap-2.5 w-1/2 items-start">
+      ${isReversed ? "flex-row-reverse" : "flex-row"}
+    `}>
+      <div className="flex flex-col gap-2.5 w-1/2 items-start card-animation">
         <span className="text-accent text-txth4 font-bold">{project.category}</span>
         <p className="text-txth3 font-semibold">{project.title}</p>
         <p className="text-normal">{project.description}</p>
@@ -27,7 +27,7 @@ export default function ProjectCard({ project, index }) {
         </ul>
       </div>
 
-      <div className="w-1/2 h-75 rounded-[20px] overflow-hidden group">
+      <div className="w-1/2 h-75 rounded-[20px] overflow-hidden group card-animation">
         <img
           src={project.image}
           alt={project.title}

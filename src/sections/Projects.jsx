@@ -14,14 +14,16 @@ function Projects() {
         );
 
     return (
-        <section id="projects" className="flex flex-col">
+        <section id="projects" className="
+            flex flex-col
+        ">
             <div className="flex flex-col items-start gap-2.5">
-                <h2 className="text-accent text-txth2 font-bold">PROYECTOS</h2>
+                <h2 className="text-accent text-txth2 font-bold card-animation">PROYECTOS</h2>
 
                 <div className="flex flex-col gap-1.25 justify-center items-start">
-                    <h3 className="text-txth3 font-semibold">Mis Proyectos Destacados</h3>
+                    <h3 className="text-txth3 font-semibold card-animation">Mis Proyectos Destacados</h3>
                     {/* Filter Buttons */}
-                    <div className="flex p-0.5 rounded-[10px] bg-card">
+                    <div className="flex p-0.5 rounded-[10px] bg-card card-animation">
                         {filters.map((filter) => (
                             <button
                                 key={filter}
