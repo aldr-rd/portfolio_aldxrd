@@ -8,7 +8,7 @@ function Certifications() {
             border-b border-bordes
         ">
             <h2 className="text-accent text-txth2 font-bold card-animation">CERTIFICACIONES</h2>
-            <div className="grid grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3.5 lg:gap-5">
                 {certifications.map((cert) => (
                     <CertificationCard 
                         key={cert.id}

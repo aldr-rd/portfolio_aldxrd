@@ -1,7 +1,9 @@
 function Footer() {
     return (
         <footer className="
-            flex px-[12%] py-5
+            flex
+            px-6 py-4
+            lg:px-[12%] lg:py-5
             border-t border-bordes
             bg-section
             items-center

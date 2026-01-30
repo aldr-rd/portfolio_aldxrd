@@ -1,16 +1,17 @@
 function Banner() {
     return (
         <section id="home" className="
-            px-[12%] py-14 flex justify-center items-center
-            animate-fade-up
-            animate-range-[entry_0%_cover_30%]
+            flex justify-center items-center
+            px-6 py-10
+            lg:px-[12%] lg:py-14
+            
         ">
             <div>
                 <div className="flex flex-col justify-center items-center gap-5">
                     <div className="flex flex-col justify-center items-center animate-blurred-fade-in">
-                        <h2 className="text-mediano text-accent font-bold">Engineering Student</h2>
-                        <h1 className="text-gigante font-black">Richard Diaz</h1>
-                        <p className='text-txth3 font-semibold'>FrontEnd Developer</p>
+                        <h2 className="text-3xl lg:text-mediano text-accent font-bold">Engineering Student</h2>
+                        <h1 className="text-gigante font-black">Aldair Diaz</h1>
+                        <p className='text-2xl lg:text-txth3 font-semibold'>FrontEnd Developer</p>
                     </div>
                     <div className="flex flex-col justify-center items-center gap-2.5 animate-blurred-fade-in">
                         <div className="flex gap-5">

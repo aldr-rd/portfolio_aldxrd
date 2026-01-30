@@ -23,7 +23,8 @@ export default function ScrollToTop() {
         <button
             onClick={scrollToTop}
             className={`
-                fixed bottom-6 right-6 z-50
+                fixed bottom-12 right-9
+                lg:bottom-6 lg:right-6 z-50
                 w-12 h-12 rounded-full
                 bg-button text-section font-black text-txth5
                 flex items-center justify-center

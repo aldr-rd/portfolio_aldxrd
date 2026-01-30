@@ -4,10 +4,16 @@ export default function ProjectCard({ project, index }) {
 
   return (
     <div className={`
-      flex py-12.5 gap-7.5 w-full border-b border-bordes
-      ${isReversed ? "flex-row-reverse" : "flex-row"}
+      flex flex-col lg:flex-row items-center
+      py-6 gap-2.5
+      lg:py-12.5 lg:gap-7.5 w-full
+      border-b border-bordes
+      ${isReversed ? "lg:flex-row-reverse" : "flex-col lg:flex-row"}
     `}>
-      <div className="flex flex-col gap-2.5 w-1/2 items-start card-animation">
+      <div className="
+        flex flex-col gap-2.5 items-start
+        w-full lg:w-1/2 card-animation
+      ">
         <span className="text-accent text-txth4 font-bold">{project.category}</span>
         <p className="text-txth3 font-semibold">{project.title}</p>
         <p className="text-normal">{project.description}</p>
@@ -27,7 +33,11 @@ export default function ProjectCard({ project, index }) {
         </ul>
       </div>
 
-      <div className="w-1/2 h-75 rounded-[20px] overflow-hidden group card-animation">
+      <div className="
+        w-full h-55
+        lg:w-1/2 lg:h-75
+        rounded-[20px] overflow-hidden group card-animation
+      ">
         <img
           src={project.image}
           alt={project.title}
@@ -35,8 +45,7 @@ export default function ProjectCard({ project, index }) {
             w-full h-full object-cover block
             transition-transform duration-400 ease-in-out
             group-hover:scale-105
-          "
-        />
+        "/>
       </div>
 
     </div>
