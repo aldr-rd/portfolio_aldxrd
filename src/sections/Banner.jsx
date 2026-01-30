@@ -7,12 +7,12 @@ function Banner() {
         ">
             <div>
                 <div className="flex flex-col justify-center items-center gap-5">
-                    <div className="flex flex-col justify-center items-center">
+                    <div className="flex flex-col justify-center items-center animate-blurred-fade-in">
                         <h2 className="text-mediano text-accent font-bold">Engineering Student</h2>
                         <h1 className="text-gigante font-black">Richard Diaz</h1>
                         <p className='text-txth3 font-semibold'>FrontEnd Developer</p>
                     </div>
-                    <div className="flex flex-col justify-center items-center gap-2.5">
+                    <div className="flex flex-col justify-center items-center gap-2.5 animate-blurred-fade-in">
                         <div className="flex gap-5">
                             <a href="https://www.linkedin.com/in/aldxrd/" target="_blank" className="
                                 flex px-5 py-2.5 bg-button rounded-[10px] text-btn
@@ -36,7 +36,7 @@ function Banner() {
                         </a>
                     </div>
                     <div>
-                        <ul className='flex gap-2.5'>
+                        <ul className='flex gap-2.5 animate-blurred-fade-in'>
                             <li><svg width={25} height={25}><use href={"/sprite.svg#html"} /></svg></li>
                             <li><svg width={25} height={25}><use href={"/sprite.svg#css"} /></svg></li>
                             <li><svg width={25} height={25}><use href={"/sprite.svg#javascript"} /></svg></li>
